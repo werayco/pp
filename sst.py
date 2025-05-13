@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-url = st.secrets["url"]
+url = st.secrets["URL_POST"]
 st.title("Email Classification App")
 
 subject = st.text_input("Enter Email Subject:")
