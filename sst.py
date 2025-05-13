@@ -16,7 +16,7 @@ if st.button("Classify Email"):
         }
         try:
             response = requests.post(
-                "https://classifier.model.soemailsecurity.com/predict",
+                url=url,
                 json=payload
             )
             if response.status_code == 200:
